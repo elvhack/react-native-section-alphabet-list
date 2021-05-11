@@ -3,21 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.styles = void 0;
 var react_native_1 = require("react-native");
 var sizes = {
-    containerWidth: 20,
+    containerWidth: 40,
     itemHeight: 15,
     itemFontSize: 10,
 };
 exports.styles = react_native_1.StyleSheet.create({
     letterIndexContainer: {
         maxWidth: sizes.containerWidth,
-        height: "100%",
         position: "absolute",
-        top: 0,
+        top: "4.8%",
         right: 0,
     },
     letterIndexList: {
-        alignItems: "center",
-        justifyContent: "center",
         height: "100%",
     },
     letterIndexItem: {

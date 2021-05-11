@@ -1,14 +1,11 @@
 export declare const styles: {
     letterIndexContainer: {
         maxWidth: number;
-        height: string;
         position: "absolute";
-        top: number;
+        top: string;
         right: number;
     };
     letterIndexList: {
-        alignItems: "center";
-        justifyContent: "center";
         height: string;
     };
     letterIndexItem: {

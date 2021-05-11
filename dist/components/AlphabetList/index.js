@@ -72,7 +72,9 @@ exports.AlphabetList = function (props) {
         if (renderCustomSectionHeader)
             return renderCustomSectionHeader(section);
         return (<react_native_1.View testID="header" style={styles_1.styles.sectionHeaderContainer}>
-        <react_native_1.Text testID="header__label" style={styles_1.styles.sectionHeaderLabel}>{section.title}</react_native_1.Text>
+        <react_native_1.Text testID="header__label" style={styles_1.styles.sectionHeaderLabel}>
+          {section.title}
+        </react_native_1.Text>
       </react_native_1.View>);
     };
     var onRenderItem = function (_a) {
@@ -80,11 +82,13 @@ exports.AlphabetList = function (props) {
         if (renderCustomItem)
             return renderCustomItem(item);
         return (<react_native_1.View testID="cell" style={styles_1.styles.listItemContainer}>
-        <react_native_1.Text testID="cell__label" style={styles_1.styles.listItemLabel}>{item.value}</react_native_1.Text>
+        <react_native_1.Text testID="cell__label" style={styles_1.styles.listItemLabel}>
+          {item.value}
+        </react_native_1.Text>
       </react_native_1.View>);
     };
     return (<react_native_1.View style={[styles_1.styles.container, style]}>
-      <react_native_1.SectionList {...sectionListProps} testID="sectionList" ref={sectionListRef} sections={sectionData} keyExtractor={function (item) { return item.key; }} renderItem={onRenderItem} renderSectionHeader={onRenderSectionHeader} ListHeaderComponent={renderCustomListHeader} getItemLayout={onGetItemLayout}/>
+      <react_native_1.SectionList {...sectionListProps} testID="sectionList" ref={sectionListRef} sections={sectionData} keyExtractor={function (item) { return item.key; }} renderItem={onRenderItem} renderSectionHeader={onRenderSectionHeader} ListHeaderComponent={renderCustomListHeader} getItemLayout={onGetItemLayout} stickySectionHeadersEnabled={true}/>
 
       <ListLetterIndex_1.ListLetterIndex sectionData={sectionData} onPressLetter={onScrollToSection} indexLetterStyle={indexLetterStyle} indexLetterContainerStyle={indexLetterContainerStyle} renderCustomIndexLetter={renderCustomIndexLetter}/>
     </react_native_1.View>);
