@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
 
 const sizes = {
-  containerWidth: 10,
+  containerWidth: 20,
   itemHeight: 15,
   itemFontSize: 10,
 };
 
 export const styles = StyleSheet.create({
   letterIndexContainer: {
-    width: sizes.containerWidth,
+    maxWidth: sizes.containerWidth,
     height: "100%",
     position: "absolute",
     top: 0,
@@ -34,8 +34,3 @@ export const styles = StyleSheet.create({
     color: "grey",
   },
 });
-
-
-
-
-
