@@ -4,6 +4,7 @@ export declare const styles: {
         position: "absolute";
         top: string;
         right: number;
+        height: string;
     };
     letterIndexList: {
         height: string;

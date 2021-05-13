@@ -13,6 +13,7 @@ exports.styles = react_native_1.StyleSheet.create({
         position: "absolute",
         top: "4.8%",
         right: 0,
+        height: "100%",
     },
     letterIndexList: {
         height: "100%",
