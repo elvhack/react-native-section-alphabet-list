@@ -11,7 +11,7 @@ exports.styles = react_native_1.StyleSheet.create({
     letterIndexContainer: {
         maxWidth: sizes.containerWidth,
         position: "absolute",
-        top: "4.8%",
+        top: 30,
         right: 0,
         height: "100%",
     },

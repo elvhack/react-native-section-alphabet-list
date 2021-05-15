@@ -2,7 +2,7 @@ export declare const styles: {
     letterIndexContainer: {
         maxWidth: number;
         position: "absolute";
-        top: string;
+        top: number;
         right: number;
         height: string;
     };

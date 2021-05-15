@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   letterIndexContainer: {
     maxWidth: sizes.containerWidth,
     position: "absolute",
-    top: "4.8%",
+    top: 30,
     right: 0,
     height: "100%",
   },
